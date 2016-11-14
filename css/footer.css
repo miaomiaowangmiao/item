@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*占位*/
+p.perch{
+    width: 100%;
+	height: 1.4375rem;
+}	
+/*底部固定部分开始*/
+.foot{
+	width: 100%;
+	height: 1.5625rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #f4f4f4;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 1000;
+}
+.foot>a{
+	font-size: 0.34375rem;
+	min-width: 1.5625rem;
+
+}
+.foot>a>img{
+	width: 0.546875rem;
+	height: 0.59375rem;
+	display: block;
+	margin-left: 0.5rem;
+	margin-bottom: 0.203125rem;
+}
+.foot>a>span{
+	display: block;
+	text-align: center;
+	
+	
+}
+.foot>a:nth-of-type(4){
+	position: relative;
+}
+.foot .purchase{
+	width: 0.59375rem;
+	height: 0.59375rem;
+	background: #ff4400;
+	position: absolute;
+	top: 0;
+    right: -0.1rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height:0.59375rem;
+	color: white;
+	display: none;
+	
+
+ 
+}
+ .chang{
+	-webkit-animation:sss 1s;
+}
+  
+    @keyframes sss{
+
+        50%{
+            
+            transform:scale(1.2,1.2);
+        },
+        100%{
+        	transform:scale(1,1);
+        }
+    }

@@ -1,0 +1,169 @@
+#reserve{
+	width: 100%;
+	background:#eeeef0;
+	
+}
+.reserve_sort{
+	height: 2.21875rem;
+	position: relative;  
+
+}
+#reserve header{
+	width: 100%;
+	height: 1.4375rem;
+	border-bottom: 0.03125rem solid #e0e0e0;
+	background: #f9fafd;
+	text-align: center;
+	line-height: 1.4375rem;
+}
+#reserve header span{
+	font-size: 0.4375rem;
+	color: #333333;
+	font-weight: bold;
+}
+.sort,.sort-order{
+	width: 100%;
+    height: 1.03125rem;
+    border-top: 0.015625rem solid #a4a4a4;
+    border-bottom: 0.015625rem solid #a4a4a4;
+    background: #ffffff;
+    
+   
+}
+.sort{
+	overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+	top: 0.28125rem;
+
+	left: 0;
+	z-index: 1;
+}
+.sort-order{
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+	top: 1.28125rem;
+
+	left: 0;
+	z-index: 1;
+}
+.sort>p,.sort-order>p{
+	width: 200%;
+	height: 100%;
+}
+.sort>p>a,.sort-order>p>a{
+    width: 1.71875rem;
+    color: #898989;
+    height: 0.92rem;
+    display: block;
+    text-align: center;
+    float: left;
+    line-height: 0.9rem;
+    margin-left: 0.25rem;
+
+
+}
+.sort>p{
+	border-bottom: 0.03125rem solid #d2d2d2;
+}
+.sort>p a:first-of-type,.sort-order>p a:first-of-type{
+	color: #595656;
+	border-bottom: 0.03125rem solid #595656;
+}
+
+/*精选水果部分开始*/
+.handpick_fruit{
+	width: 100%;
+	height: 0.9375rem;
+	border-top: 1px solid #a0a0a0;
+	margin-top: 0.25rem;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	padding-left: 0.265625rem;
+}
+.handpick_fruit>p{
+	height: 0.40625rem;
+	width: 100%;
+	border-left: 0.15625rem solid #2baefe;
+	text-indent: 0.3125rem;
+}
+/*商品列表部分开始*/
+.sells_ist{
+    width: 100%;
+    background: #fff;
+    height: 13rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 0.203125rem
+    position: absolute;
+}
+.sells_ist>li{
+	width: 100%;
+	height: 3.53125rem;
+	border-top: 0.03125rem solid #cccccc;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.sells_ist>li>img{
+	width: 4.6875rem;
+	height: 3.5rem;
+}
+.sells_ist>li>div{
+	width: 4.265625rem;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.sells_ist>li>div>p{
+	display: flex;
+	align-items: center;
+}
+
+.sells_ist>li>div>p:last-of-type{
+	color: #f1361d;
+}
+.sells_ist>li>div>p:last-of-type span{
+	font-size: 0.5625rem;
+	font-weight: bold;
+}
+.sells_ist>li>span{
+	width: 1.078125rem;
+	height: 1.0625rem;
+	position: absolute;
+	right: 0.625rem;
+	bottom: 0.515625rem;
+}
+.sells_ist>li>span>img{
+	width: 1.078125rem;
+	height: 1.0625rem;
+}
+/*网页底部开始*/
+#foot{
+	width: 100%;
+	height: 1.5625rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #f4f4f4;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#foot>a{
+	font-size: 0.34375rem;
+	min-width: 1.5625rem;
+}
+#foot>a>img{
+	width: 0.546875rem;
+	height: 0.59375rem;
+	display: block;
+	margin-left: 0.5rem;
+	margin-bottom: 0.203125rem;
+}
+#foot>a>span{
+	display: block;
+	text-align: center;
+}

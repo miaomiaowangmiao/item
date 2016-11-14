@@ -1,0 +1,280 @@
+@charset "utf-8";
+#shop{
+	width: 100%;
+	background: #efefef;
+}
+.clear-fix:after{
+	content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+}
+
+#shop .cart-title{
+	width: 100%;
+	height: 1.5rem;
+	background: #f9fafd;
+	border-bottom: 0.015625rem solid #e0e0e0;
+	font-size: 0.400625rem;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.5rem;
+	position: fixed; 
+	top: 0;
+	left: 0;
+	z-index: 101;
+}
+/*占位*/
+p.perch{
+    width: 100%;
+	height: 1.4375rem;
+}	
+.cart-address{
+   width: 100%;
+   background: #ffffff;
+
+}
+.cart-address span{
+	display: block;
+    height: 1.546875rem;
+	font-size: 0.4375rem;
+	line-height: 1.546875rem; 
+	color: #e64f1a;
+	margin-left: 0.453125rem;
+
+}
+.shopSend{
+	height: 1.71875rem;
+	background: #fff;
+	margin-top: 0.3125rem;
+	padding-top: 0.328125rem;
+	border-bottom: 0.015625rem solid #e0e0e0;
+
+}
+.shopSend p{
+	color: #d1d1d1;
+	font-size: 0.390625rem;
+
+}
+
+.shopSend p:nth-child(1){
+  border-left: 0.15625rem solid #ffd600;
+  border-radius: 0.098125rem;
+  margin-left: 0.46875rem;
+}
+
+.shopSend p:nth-child(1) span{
+	margin-left: 0.1875rem;
+}
+div.receive{
+	width: 100%;
+	height: 1.578125rem;
+	border-bottom: 0.015625rem solid #e0e0e0;
+	background: white;
+	position: relative;
+}
+div.receive select.Sendtime{
+	width: 100%;
+	height: 1.578125rem;
+	border: 0;
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-appearance: none;
+	 opacity: 0; 
+}
+.takeGoods{
+	width:5.0625rem;
+	height: 1.578125rem;
+	line-height: 1.578125rem;
+	font-size:0.390625rem; 
+	margin-left: 0.4375rem;
+	display: inline-block;
+}
+.takeGoods span{
+	color: #ea683b;
+	margin-left: 0.421875rem;
+}
+.receive a{
+	float: right;
+	font-size: 0.375rem;
+	line-height:1.578125rem; 
+}
+.receive a img{
+	width: 0.234375rem;
+	height: 0.359375rem;
+	margin:0 0.421875rem 0 0.1875rem; 
+}
+.group-comment{
+	width: 100%;
+	height: 1.625rem;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	font-size: 0.40625rem;
+	border-bottom:0.015625rem solid #e0e0e0;
+}
+.group-comment span{
+	margin-left: 0.453125rem;
+}
+.group-comment input#messages{
+	width: 6.859375rem;
+	height: 1.03125rem;
+	border-radius:0.15625rem;
+	margin-left: 0.390625rem;
+	text-indent: .5rem;
+
+}
+.shopSend p:nth-child(2){
+	padding: 0.52% 5%;
+	font-size: 0.34375rem;
+	line-height: 0.2rem;
+	margin-top: 0.4375rem;
+	height: 0.3125rem;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+};
+/*购物清单*/
+table.group-list{
+	width: 100%;
+}
+table.group-list tr{
+	height: 2.5625rem;
+	border-bottom: 0.015625rem solid #e0e0e0;
+	background: #fff;
+}
+td.item-checkbox{
+   width:1.5rem;
+   
+}
+td.item-checkbox span{
+	width: 0.578125rem;
+	height: 0.578125rem;
+	display: block;
+	background: url("../../images1/checkbox-no.png") 0 0/0.578125rem 0.578125rem no-repeat;
+	margin: auto;
+}
+#shop span.selectChecked{
+	background: url("../../images1/checkbox.png") 0 0/0.578125rem 0.578125rem no-repeat;
+}
+td.group-img,td.group-img img{
+    width:1.84375rem;
+    height:1.84375rem;
+    margin: auto;
+}
+td.ui-ellipsis{
+    width: 6.65625rem;
+    height: 2.546875rem;
+    position: relative;
+}
+
+td.ui-ellipsis p{
+	height: 1.28125rem;
+	padding-left: 0.203125rem;
+	font-size: 0.4375rem;
+	line-height: 1.28125rem; 
+	white-space: nowrap;
+
+}
+/*加减商品*/
+div.pirceTable{
+	padding-left: 0.203125rem;
+	position: relative;
+
+}
+.innerCount{
+	height: 1.34375rem;
+	position: absolute;
+	bottom:-0.2rem;
+	right: 0;
+}
+#shop .innerCount span.count{
+	 position: absolute;
+    bottom: 0.3rem;
+    left: -1.6rem;
+    font-size: 0.4375rem;
+   	width: 0.671875rem;
+    text-align: center;
+    display: none;
+}
+#shop div.innerLeft{
+	position: absolute;
+
+	width: 0.90625rem;
+	height: 0.90625rem;
+	background:#ff4300 url("../../images1/product_operate-57bf1d7b.png") no-repeat;
+	background-size: 200% 100%;
+	border-radius: 50%;
+    bottom:0.1rem;
+    right:1.6rem;
+    z-index: 100;
+    border:0.03125rem solid #e0e0e0;
+    display: none;
+}
+#shop div.innerRight{
+	position: absolute;
+
+	width: 0.90625rem;
+	height: 0.90625rem;
+	background:#ff4300 url("../../images1/product_operate-57bf1d7b.png") no-repeat right center;
+	background-size: 200% 100%;
+	border-radius: 50%;
+    bottom:0.1rem;
+    right:0.05rem;
+    z-index: 100;
+    border:0.03125rem solid #e0e0e0;
+}
+/*选好啦*/
+.group-footer{
+	width: 100%;
+	height: 1.625rem;
+	background: #fff;
+	border-bottom:0.03125rem solid #e0e0e0;
+	font-size: 0.46875rem;
+
+}
+.group-btn{
+	background-color: #ffd600;
+	width: 3.09375rem;
+	height: 1.625rem;
+    text-align: center;
+    line-height:  1.625rem;
+    font-size:0.5rem;
+    float: right;
+
+}
+.group-btnAdd{
+	background-color: gray;
+	font-size: 0.4375rem;
+}
+.group-footer span{
+
+     height: 1.625rem;
+     line-height: 1.625rem; 
+}
+.selectAll-false{
+	width: 1.96875rem;
+	height: 1.625rem;
+	margin-left: 0.390625rem;
+	background: url("../../images1/checkbox-no.png") 0 0/0.578125rem 0.578125rem no-repeat;
+	padding-left:0.828125rem;
+	margin-right: 0.546875rem;
+}
+.group-footer span:nth-of-type(2){
+	color: #e64f1a;
+};
+/*占位*/
+p.perch{
+    width: 100%;
+	height: 1.4375rem;
+}	
+
+
+.market{
+    color: #999999;
+    text-decoration: line-through;
+};
