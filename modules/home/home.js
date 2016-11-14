@@ -38,7 +38,9 @@ function bannerImg(){
  
   })    
 }
+
 function ask(){
+	var aaa=0;//这里测试git
 	$.ajax({
 	   type: "get",
 	   url: "http://www.vrserver.applinzi.com/aixianfeng/apihome.php",
