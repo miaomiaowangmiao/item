@@ -172,8 +172,10 @@ $(".innerRight").click(function(){
         localStorage.setItem(lat,JSON.stringify(news));
 		
 		for(var keys in localStorage){
+			if(keys != 'jfVersion'){
     		var news=JSON.parse(localStorage.getItem(keys));
 		    newsI+=parseInt(news.sum);
+		   }
 		   
 	       }
 	    $(".purchase").html(newsI);
@@ -265,7 +267,7 @@ $(".innerLeft").click(function(){
 function getShopData(value){
     		var keySum=0;
 	for(var keys in localStorage){
-
+if(keys != 'jfVersion'){
     		var news=JSON.parse(localStorage.getItem(keys));
     		
     		var arrSplit=keys.split("_")[1];
@@ -283,5 +285,5 @@ function getShopData(value){
 	     $(".purchase").html(keySum);
     		
 	}
-
+}
 }

@@ -120,7 +120,7 @@ function calculat(cont){
 			
 		};
 		
-     $(".total").html(to_add());
+     $(".total").html("￥"+to_add());
      //数据删改
      var lat=$(this).parents(".ui-ellipsis").parent().attr("title");
         var count=$(this).siblings("span.count").html();
@@ -161,24 +161,24 @@ function calculat(cont){
 			 mun+=digit;
 		})
 	
-		  $.each($(".item-checkbox>span"),function(i,ele){
-		  	  if(this.className=="selectChecked"){
-         		e++;
-         	}
-		  	  if(e==$(".item-checkbox>span").length){
-		  	  	$(".selectAll-false").removeClass("selectChecked");
-		  	  	$(".group-btn").addClass("group-btnAdd");
-		       	$(".group-btn").html("满￥0元起送");
-		       	$(".total").html("￥"+0);
-		  	  	 
-		  	  }
-         });
+//		  $.each($(".item-checkbox>span"),function(i,ele){
+//		  	  if(this.className!="selectChecked"){
+//       		e++;
+//       	}
+//		  	  if(e==$(".item-checkbox>span").length){
+//		  	  	$(".selectAll-false").removeClass("selectChecked");
+//		  	  	$(".group-btn").addClass("group-btnAdd");
+//		       	$(".group-btn").html("满￥0元起送");
+//		       	$(".total").html("￥"+0);
+//		  	  	 
+//		  	  }
+//       });
 		$(".purchase").html(mun);
 		
 		if(mun>0){
 			$(".purchase").show();
 		}
-     $(".total").html(to_add());
+     $(".total").html("￥"+to_add());
 		
         var count=parseInt($(this).next().html());
         if(count==0){
@@ -221,7 +221,7 @@ function local(){
 var strTr="";
 var cont=0;
 	for(var keys in localStorage){
-
+if(keys != 'jfVersion'){
     		var news=JSON.parse(localStorage.getItem(keys));
     		cont+=parseInt(news.sum);
     		strTr+='<tr title='+keys+'>'
@@ -257,7 +257,8 @@ var cont=0;
 
 	localStorage.setItem(keys,JSON.stringify(newSet));
     	}
-    		$(".group-list tbody").html(strTr);
+    		}
+$(".group-list tbody").html(strTr);
     	
        
     		calculat(cont);

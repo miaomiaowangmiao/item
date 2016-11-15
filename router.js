@@ -19,6 +19,7 @@ define(['backbone'],function(){
             home.render();
             home.getData();
             home.swiper();
+            home.bindEvent();
           })
       },
       shopFn: function() {
